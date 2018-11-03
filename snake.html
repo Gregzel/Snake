@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Jeu Snacke </title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="processing.js"></script>
+	<script type="text/javascript" src="minim.js"></script>
+    <script type="text/javascript" src="canvasFocus.js"></script>
+    <script type="text/javascript" src="editor.js"></script>
+    <script type="text/javascript"></script>
+    <style>
+      canvas {
+        display: inline-block;
+      }
+      #editor {
+        display: inline-block;
+        vertical-align: top;
+      }
+      .tab {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Jeu Snacke</h1>
+	
+		<canvas data-processing-sources="snakeGame.pde"
+            style="border: 1px solid black;"
+            tabindex="1"></canvas>
+            
+    <div id="editor">
+		<h2 class="font_3" style="font-size:23px; line-height:1.4em;">Commandes du jeu : </h2>
+		<h2 class="font_3" style="font-size:23px; line-height:1.4em;">&nbsp; Fleche Haut : Haut</h2>
+		<h2 class="font_3" style="font-size:23px; line-height:1.4em;">&nbsp; Fleche Bas : Bas </h2>
+		<h2 class="font_3" style="font-size:23px; line-height:1.4em;">&nbsp; Fleche Droite :Droite </h2>
+		<h2 class="font_3" style="font-size:23px; line-height:1.4em;">&nbsp; Fleche Gauche : Gauche </h2>
+    </div>
+    
+    <canvas data-processing-sources="snake.pde"
+            style="border: 1px solid black;"
+            tabindex="1"></canvas>
+  </body>
+</html>
